@@ -1,5 +1,7 @@
 export default function Generator() {
     return (
-        <h1>Generator</h1>
+        <section>
+            <h2>Weed Name Generator</h2>
+        </section>
     )
 };
