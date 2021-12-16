@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
 }
 
 header {
@@ -11,4 +16,40 @@ header {
 
 section {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 1.2vw;
+  margin: 3.9vw 0 3.9vw 0;
+}
+
+input {
+  background-color: black;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 2.4vw;
+  color: white;
+  border: none;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+}
+
+input, input[type=submit] {
+  padding: 1.2vw;
 }

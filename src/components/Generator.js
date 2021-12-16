@@ -4,170 +4,170 @@ export default function Generator() {
     const first = (i) => {
         switch (i.slice(0, 1).toLowerCase()) {
             case 'a':
-                return "Doja"
+                return "Silver"
                 break;
             case 'b':
-                return "Doja"
+                return "Holy"
                 break;
             case 'c':
-                return "Doja"
+                return "Haze"
                 break;
             case 'd':
-                return "Doja"
+                return "Ice"
                 break;
             case 'e':
-                return "Doja"
+                return "Wedding"
                 break;
             case 'f':
-                return "Doja"
+                return "Blue Dreams"
                 break;
             case 'g':
-                return "Doja"
+                return "Master's"
                 break;
             case 'h':
-                return "Doja"
+                return "Grape"
                 break;
             case 'i':
-                return "Doja"
+                return "Cotton Candy"
                 break;
             case 'j':
                 return "Doja"
                 break;
             case 'k':
-                return "Doja"
+                return "Kryptonite"
                 break;
             case 'l':
-                return "Doja"
+                return "Platinum"
                 break;
             case 'm':
-                return "Doja"
+                return "Brooklyn"
                 break;
             case 'n':
-                return "Doja"
+                return "L.A."
                 break;
             case 'o':
-                return "Doja"
+                return "Blue"
                 break;
             case 'p':
-                return "Doja"
+                return "Sour"
                 break;
             case 'q':
-                return "Doja"
+                return "Girl Scout"
                 break;
             case 'r':
-                return "Doja"
+                return "Tangerine"
                 break;
             case 's':
-                return "Doja"
+                return "Bubba"
                 break;
             case 't':
-                return "Doja"
+                return "Blueberry"
                 break;
             case 'u':
-                return "Doja"
+                return "Afghan"
                 break;
             case 'v':
-                return "Doja"
+                return "Strawberry"
                 break;
             case 'w':
-                return "Doja"
+                return "Lucifer"
                 break;
             case 'x':
-                return "Doja"
+                return "Grandaddy"
                 break;
             case 'y':
-                return "Doja"
+                return "Grandma's"
                 break;
             case 'z':
-                return "Doja"
+                return "White"
                 break;
             default:
-                return "Doja"
+                return "Purple"
         }
     }
 
     const last = (i) => {
         switch (i.slice(0, 1).toLowerCase()) {
             case 'a':
-                return "Doja"
+                return "Cookies"
                 break;
             case 'b':
-                return "Doja"
+                return "Kush"
                 break;
             case 'c':
-                return "Doja"
+                return "Skunk"
                 break;
             case 'd':
-                return "Doja"
+                return "Bubble"
                 break;
             case 'e':
-                return "Doja"
+                return "Cake"
                 break;
             case 'f':
-                return "Doja"
+                return "Gold"
                 break;
             case 'g':
-                return "Doja"
+                return "OG"
                 break;
             case 'h':
-                return "Doja"
+                return "Glue"
                 break;
             case 'i':
-                return "Doja"
+                return "Princess"
                 break;
             case 'j':
-                return "Doja"
+                return "Candy"
                 break;
             case 'k':
-                return "Doja"
+                return "Afgani"
                 break;
             case 'l':
-                return "Doja"
+                return "Mistress"
                 break;
             case 'm':
-                return "Doja"
+                return "Purps"
                 break;
             case 'n':
-                return "Doja"
+                return "Cheese"
                 break;
             case 'o':
-                return "Doja"
+                return "Dreams"
                 break;
             case 'p':
-                return "Doja"
+                return "Poison"
                 break;
             case 'q':
-                return "Doja"
+                return "OG Kush"
                 break;
             case 'r':
-                return "Doja"
+                return "Widow"
                 break;
             case 's':
-                return "Doja"
+                return "Cough"
                 break;
             case 't':
-                return "Doja"
+                return "Haze"
                 break;
             case 'u':
-                return "Doja"
+                return "Pink"
                 break;
             case 'v':
-                return "Doja"
+                return "Gold"
                 break;
             case 'w':
-                return "Doja"
+                return "Diesel"
                 break;
             case 'x':
-                return "Doja"
+                return "Sativa"
                 break;
             case 'y':
-                return "Doja"
+                return "Waui"
                 break;
             case 'z':
-                return "Doja"
+                return "Rhino"
                 break;
             default:
-                return "";
+                return "Kush";
         }
     }
 
@@ -182,8 +182,7 @@ export default function Generator() {
 
     const generateName = e => {
         e.preventDefault();
-        setName(first(state.first) + last(state.last))
-        console.log(name)
+        setName(`${first(state.first)} ${last(state.last)}`)
     }
 
     return (
@@ -195,12 +194,14 @@ export default function Generator() {
                     onChange={handleChange}
                     value={state.first}
                     type="text"
+                    placeholder="First Name"
                 />
                 <input
                     name="last"
                     onChange={handleChange}
                     value={state.last}
                     type="text"
+                    placeholder="Last Name"
                 />
                 <input type="submit" />
             </form>
